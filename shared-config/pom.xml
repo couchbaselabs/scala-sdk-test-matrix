@@ -14,6 +14,10 @@
   <name>Shared Config Module</name>
   <packaging>jar</packaging>
 
+  <properties>
+    <scala.version>2.13.15</scala.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>com.typesafe</groupId>
