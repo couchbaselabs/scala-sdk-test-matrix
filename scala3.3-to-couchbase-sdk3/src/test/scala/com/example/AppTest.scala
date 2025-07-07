@@ -1,9 +1,9 @@
-package com.example
+package com.couchbase
 
 import org.scalatest.funsuite.AnyFunSuite
 import com.couchbase.client.scala.{Cluster, ClusterOptions}
 import com.couchbase.client.scala.json.JsonObject
-import com.example.ClusterConfig as CC
+import com.couchbase.ClusterConfig as CC
 
 import scala.util.{Failure, Success}
 import org.scalatestplus.junit.JUnitRunner

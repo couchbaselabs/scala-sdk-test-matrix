@@ -1,4 +1,4 @@
-package com.example
+package com.couchbase
 
 import com.typesafe.config.ConfigFactory
 
