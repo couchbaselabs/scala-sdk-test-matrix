@@ -14,10 +14,6 @@
   <name>Shared Config Module</name>
   <packaging>jar</packaging>
 
-  <properties>
-    <scala.version>3.3.6</scala.version>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>com.typesafe</groupId>
@@ -25,25 +21,4 @@
       <version>1.4.3</version>
     </dependency>
   </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-        <version>4.8.0</version>
-        <executions>
-          <execution>
-            <id>compile-scala</id>
-            <goals>
-              <goal>compile</goal>
-            </goals>
-          </execution>
-        </executions>
-        <configuration>
-          <scalaVersion>${scala.version}</scalaVersion>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project> 
