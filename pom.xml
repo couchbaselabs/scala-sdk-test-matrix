@@ -13,6 +13,7 @@
     <module>scala3.3-to-couchbase-sdk2.13</module>
     <module>scala2.13-to-couchbase-sdk3</module>
     <module>scala2.13-to-couchbase-sdk2.13</module>
+    <module>scala2.12-to-couchbase-sdk2.12</module>
     <module>shared-config</module>
   </modules>
 

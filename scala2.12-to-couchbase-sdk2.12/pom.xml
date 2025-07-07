@@ -10,18 +10,18 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>scala2.13-to-couchbase-sdk2.13</artifactId>
-  <name>Scala 2.13 to Couchbase SDK 2.13</name>
+  <artifactId>scala2.12-to-couchbase-sdk2.12</artifactId>
+  <name>Scala 2.12 to Couchbase SDK 2.12</name>
   <packaging>jar</packaging>
 
   <properties>
-    <scala.version>2.13.15</scala.version>
+    <scala.version>2.12.19</scala.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>com.couchbase.client</groupId>
-      <artifactId>scala-client_2.13</artifactId>
+      <artifactId>scala-client_2.12</artifactId>
       <version>${couchbase.scala-client.version}</version>
     </dependency>
 
@@ -38,13 +38,14 @@
 
     <dependency>
       <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_2.13</artifactId>
+      <artifactId>scalatest_2.12</artifactId>
       <version>3.2.18</version>
       <scope>test</scope>
     </dependency>
+
     <dependency>
       <groupId>org.scalatestplus</groupId>
-      <artifactId>junit-4-13_2.13</artifactId>
+      <artifactId>junit-4-13_2.12</artifactId>
       <version>3.2.18.0</version>
       <scope>test</scope>
     </dependency>
