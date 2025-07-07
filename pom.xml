@@ -12,6 +12,7 @@
     <module>scala3.3-to-couchbase-sdk3</module>
     <module>scala3.3-to-couchbase-sdk2.13</module>
     <module>scala2.13-to-couchbase-sdk3</module>
+    <module>scala2.13-to-couchbase-sdk2.13</module>
     <module>shared-config</module>
   </modules>
 
@@ -69,6 +70,7 @@
 
   <properties>
     <scala.version>3.3.6</scala.version>
+    <couchbase.scala-client.version>3.9.0-SNAPSHOT</couchbase.scala-client.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>

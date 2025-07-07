@@ -10,8 +10,8 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>scala2.13-to-couchbase-sdk3</artifactId>
-  <name>Scala 2.13 to Couchbase SDK 3</name>
+  <artifactId>scala2.13-to-couchbase-sdk2.13</artifactId>
+  <name>Scala 2.13 to Couchbase SDK 2.13</name>
   <packaging>jar</packaging>
 
   <properties>
@@ -42,14 +42,12 @@
       <version>3.2.18</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>org.scalatestplus</groupId>
       <artifactId>junit-4-13_2.13</artifactId>
       <version>3.2.18.0</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -57,20 +55,4 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <!-- <build>
-    <plugins>
-      <plugin>
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-        <inherited>false</inherited>
-        <configuration>
-          <args>
-            <arg>-deprecation</arg>
-            <arg>-feature</arg>
-          </args>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build> -->
 </project> 
