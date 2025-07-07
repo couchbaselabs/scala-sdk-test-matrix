@@ -1,0 +1,12 @@
+# Maven & Scala
+/target/
+**/target/
+*.log
+.mvn/
+# IntelliJ / VS Code
+.idea/
+.vscode/
+# OS files
+.DS_Store
+# local overrides
+application.local.conf 
