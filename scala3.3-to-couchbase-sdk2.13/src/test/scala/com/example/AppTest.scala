@@ -46,7 +46,7 @@ class AppTest extends AnyFunSuite:
 
   test("basic transaction"):
     cluster.transactions.run(ctx =>
-      val id = "txn-doc::1"
+      val id = s"txn-doc::${java.util.UUID.randomUUID()}"
       for
         _ <- ctx.insert(collection, id, JsonObject("foo" -> "bar"))
         doc <- ctx.get(collection, id)

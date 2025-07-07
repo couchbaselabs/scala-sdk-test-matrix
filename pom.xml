@@ -9,7 +9,8 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>scala3-couchbase3-app</module>
+    <module>scala3.3-to-couchbase-sdk3</module>
+    <module>scala3.3-to-couchbase-sdk2.13</module>
     <module>shared-config</module>
   </modules>
 </project> 
