@@ -29,7 +29,8 @@
 
     <dependency>
       <groupId>com.couchbase</groupId>
-      <artifactId>shared-config</artifactId>
+      <artifactId>shared-config_2.13</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>

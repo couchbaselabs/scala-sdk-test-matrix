@@ -3,8 +3,11 @@ package com.couchbase
 import org.scalatest.funsuite.AnyFunSuite
 import com.couchbase.client.scala.{Cluster, ClusterOptions}
 import com.couchbase.client.scala.json.JsonObject
+import com.couchbase.client.scala.kv.GetResult
+import com.couchbase.client.scala.query.QueryResult
 import org.scalatestplus.junit.JUnitRunner
 import org.junit.runner.RunWith
+
 import scala.util.{Failure, Success}
 import java.util.concurrent.TimeUnit
 import scala.concurrent.duration.Duration
@@ -29,7 +32,7 @@ class AppTest extends AnyFunSuite {
     }
 
     collection.get("doc::1") match {
-      case Success(result) => assert(result.contentAs[JsonObject].get == doc)
+      case Success(result: GetResult) => assert(result.contentAs[JsonObject].get == doc)
       case Failure(err)    => fail(err.getMessage)
     }
 
@@ -41,7 +44,7 @@ class AppTest extends AnyFunSuite {
 
   test("basic query") {
     cluster.query("SELECT 1=1") match {
-      case Success(result) =>
+      case Success(result: QueryResult) =>
         result.rowsAs[JsonObject] match {
           case Success(rows) => assert(rows.nonEmpty)
           case Failure(err)  => fail(err.getMessage)

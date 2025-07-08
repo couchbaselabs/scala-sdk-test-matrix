@@ -10,12 +10,12 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
 
-  <artifactId>shared-config_2.13</artifactId>
-  <name>Shared Config Module</name>
+  <artifactId>shared-config_2.12</artifactId>
+  <name>Shared Config Module (Scala 2.12)</name>
   <packaging>jar</packaging>
 
   <properties>
-    <scala.version>2.13.15</scala.version>
+    <scala.version>2.12.19</scala.version>
   </properties>
 
   <dependencies>
@@ -25,4 +25,18 @@
       <version>1.4.3</version>
     </dependency>
   </dependencies>
+
+  <!-- Disable automatic scala suffix to avoid double suffixing since the artifactId already contains it -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.alchim31.maven</groupId>
+        <artifactId>scala-maven-plugin</artifactId>
+        <inherited>false</inherited>
+        <configuration>
+          <addScalaSuffixToArtifactId>false</addScalaSuffixToArtifactId>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project> 
