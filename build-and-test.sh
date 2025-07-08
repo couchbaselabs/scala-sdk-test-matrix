@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-mvn -B clean test 
+./mvnw -B clean test 
 
 # Test matrix – latest patch release for each Scala 3 minor.
 SCALA_VERSIONS=(
@@ -18,7 +18,7 @@ SCALA_VERSIONS=(
 
 for V in "${SCALA_VERSIONS[@]}"; do
   echo "\n===== Building & testing with Scala ${V} ====="
-  mvn -B \
+  ./mvnw -B \
     -pl scala3.3-to-couchbase-sdk3 \
     -am \
     -Dscala.version="${V}" \
